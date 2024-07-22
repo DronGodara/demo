@@ -1,0 +1,240 @@
+body {
+    background-color: #000;
+    color: #BCC6CC;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    scrollbar-width: thin;
+    scrollbar-color: #666 #333;
+    scroll-behavior: smooth;
+    scrollbar-gutter: 10px;
+}
+
+nav {
+    background-color: darkgreen;
+    color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 19px;
+    padding: 20px;
+    margin: 20px;
+    top: 5px;
+    display: flex; 
+    justify-content: space-between; 
+   border-radius: 30px;
+}
+
+nav ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li:last-child {
+    margin-right: 5px; 
+}
+
+nav input[type="search"] {
+    width: 200px;
+    height: 35px; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: auto; 
+}
+
+h1 {
+    text-align: center;
+    text-decoration:underline;
+}
+
+h3 {
+    text-align: left;
+}
+
+a {
+    border-radius: 8px;
+
+}
+
+img {
+    width: 850px;
+    height: 450px;
+    align-items: center;
+    position: relative;
+    border-radius: 80px;
+    border-color: aliceblue;
+    border-width: 8px;;
+
+}
+
+.bike {
+    
+    background-color: #000;
+    display: inline-block;
+    margin: 80px;
+    padding: 80px;
+    border: 2px solid #ddd;
+    border-radius: 17px;
+    box-shadow: 0 0 30px rgba(228, 3, 3, 0.705);
+    width: 300px; 
+    right: 500px;
+    left: 0px;
+  }
+  
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+  .bike:hover {
+    box-shadow: 0 0 30px rgba(244, 3, 3, 0.332);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in;
+  }
+  
+  .bike-image {
+   
+    width: 100%;
+    height: 170px; 
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .bike-image img {
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .bike-image:hover img {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+  }
+  
+  .bike-details {
+   
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .bike-details h3 {
+  
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .bike-details ul {
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    size: 0px;
+  }
+  
+  .bike-details ul li {
+    
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .bike-details ul li::before {
+    
+    content: "\2022";
+    margin-right: 10px;
+    color: #666;
+  }
+
+  .bike-details ul li:last-child {
+   
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+  
+@media only screen and (min-width: 1200px) {
+    .bike {
+        width: 400px; /* adjust the width for large screens */
+    }
+    .bike-image {
+        height: 220px; /* adjust the height for large screens */
+    }
+}
+
+button {
+  
+    background-color: #1206f8;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #dbf706;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:active {
+    
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transform: translateY(2px);
+  }
+  
+  button:focus {
+    
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  p {
+    gap: 5px;
+    line-height: 29px;
+    color: magenta;
+  }
+
+  footer {
+    background-color: #000;
+    color: aliceblue;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    background-blend-mode: difference;
+    margin-bottom: 20px;
+  }
+
+  i {
+    margin: 20px;
+  }
+
+  big {
+   font-weight: 500;
+   font-size: x-large;
+  }
+
+  .bike {
+    opacity: 0.45;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .bike:hover {
+    opacity: 1;
+  }
+
+  
